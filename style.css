@@ -1,0 +1,278 @@
+/* General styles */
+body {
+  background-color: bisque;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox layout for header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+}
+
+/* Header content */
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo/navbar-brand */
+.navbar-brand {
+  color: white;
+  text-decoration: underline;
+  font-size: 24px;
+  margin-right: 760px;
+}
+
+.navbar-brand:hover {
+  background-color: darkseagreen;
+}
+
+/* Navigation links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+/* Search form and button */
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  margin-right: 10px;
+  width: 200px;
+}
+
+/* Search button */
+.btn {
+  color: white;
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #0056b3;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+/* Heading and Content Section */
+.heading-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.heading {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.content {
+  flex-basis: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+/* Carousel Styles */
+.carousel {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.carousel:hover {
+  text-decoration: underline;
+}
+
+.carousel-control-prev {
+  padding-top: 15%;
+  margin-top: 20%;
+}
+
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: #fff;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+.carousel-inner {
+  background-color: #333;
+}
+
+.carousel-caption {
+  background-color: cornsilk;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-caption h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 20px;
+}
+
+/* Featurette Styles */
+.featurette-divider {
+  margin: 40px 0;
+}
+
+.featurette-heading {
+  margin-top: 5%;
+  margin-left: 20%;
+  font-size: 36px;
+  font-weight: bold;
+  color: #007bff;
+}
+.featurette-heading:hover{
+  background-color:lightgreen;
+  
+}
+
+.featurette p {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Footer Styles */
+footer {
+  background-color: darkseagreen;
+  color:whitesmoke;
+  padding: 20px 0;
+  align-content: center;
+ 
+}
+footer:hover{
+  background-color:darkturquoise;
+}
+
+footer a {
+  color:black;
+  text-decoration: none;
+
+  
+}
+
+
+footer a:hover {
+  background-color:lightcoral;
+  text-decoration: underline;
+}
+
+/* Add CSS for larger screens (md and above) */
+@media (min-width: 768px) {
+  .row.featurette {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .row.featurette .col-md-5 {
+    order: 1;
+  }
+
+  .row.featurette .col-md-7 {
+    order: 2;
+  }
+
+  /* Add CSS for the second 500x500 image */
+  .row.featurette .col-md-5 img {
+    order: 2;
+  }
+
+  .row.featurette .col-md-7 img {
+    order: 1;
+  }
+}
+
+/* Custom styles */
+.rounded-circle {
+  margin-left: 16%;
+}
+
+.col-lg-4 {
+  width: 100%;
+  margin-left: 5%;
+}
+
+.row {
+  width: fit-content;
+  padding-left: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+h2, p {
+  margin-right: 27%;
+  text-align: center;
+}
+
+.lead {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.lead:hover{
+  background-color: darkgray;
+}
+
+/* Media query for tablet devices (between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-brand {
+    margin-right: 200px; /* Adjust margin for smaller screens */
+  }
+}
+
+/* Media query for mobile devices (up to 767.98px) */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    margin-right: 10px; /* Adjust margin for smaller screens */
+  }
+}
